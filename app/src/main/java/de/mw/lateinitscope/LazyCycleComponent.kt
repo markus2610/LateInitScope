@@ -9,7 +9,7 @@ class LazyCycleBar(val foo: Lazy<LazyCycleFoo>)
 
 interface LazyCycleComponent {
 
-    val bar: LazyCycleBar
+    //val bar: LazyCycleBar
 
     @ApplicationScope
     @Provides fun bar(foo: Lazy<LazyCycleFoo>) = LazyCycleBar(foo)
